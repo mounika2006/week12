@@ -22,15 +22,15 @@ pipeline {
 
         stage('Docker Login') {
             steps {
-                bat 'docker login -u mounika262006 -p Mounika@2006'
+                bat 'docker login -u mounika2662006 -p Mounika@2006'
             }
         }
 
         stage('Push Docker Image to Docker Hub') {
             steps {
                 echo "Push Docker Image to Docker Hub"
-                bat 'docker tag seleniumdemapp:v1 mounika262006/sample:seleniumtestimage'
-                bat 'docker push mounika262006/sample:seleniumtestimage'
+                bat 'docker tag seleniumdemapp:v1 mounika2662006/sample:seleniumtestimage'
+                bat 'docker push mounika2662006/sample:seleniumtestimage'
             }
         }
 
